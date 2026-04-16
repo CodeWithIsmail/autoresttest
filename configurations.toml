@@ -6,7 +6,7 @@
 # Relative path from the project root to the OpenAPI specification file.
 # Only .yaml and .json are supported; file MUST be OpenAPI 3.0.
 # location = "specs/original/oas/ohsome.yaml"
-location = "aratrl-openapi/market2.yaml"
+location = "careerstory-openapi/combined.yaml"
 
 # Maximum times a circular/self-reference may appear in the resolution stack.
 # A value of 1 means an element may be referred to exactly once before triggering the handler.
@@ -19,7 +19,7 @@ strict_validation = false
 # LLM engine used for Value Agent (and optional Header Agent) generation.
 # Supports any model from an OpenAI-API compatible provider (OpenAI, OpenRouter, Azure, local models, etc.).
 # Must support JSON mode.
-engine = "google/gemini-2.5-flash-lite-preview-09-2025"
+engine = "google/gemini-2.0-flash-001"
 
 # Sampling temperature for creative generations (0.0 = deterministic, higher = more random).
 creative_temperature = 1
@@ -93,5 +93,5 @@ port = 8080
 # Static headers to include with every request.
 # Supports environment variable interpolation using ${VAR_NAME} syntax.
 # Example:
-# Authorization = "Bearer ${ACCESS_TOKEN}"
+Authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYzE4MDk1Yy1iNzJjLTRlYTctOGQ5Ni02OWNiNTg0ZmE1ZDMiLCJyb2xlIjoiQURNSU4iLCJ0b2tlblR5cGUiOiJBVVRIIiwiaWF0IjoxNzc2MzIwOTY5LCJleHAiOjE3Nzg5MTI5Njl9.K4VPeF6soP2rqnhYOhkZSksj1_SxUdp7uxTLn6Q7UhM"
 # X-API-Key = "static-value"
