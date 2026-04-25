@@ -93,5 +93,5 @@ port = 8080
 # Static headers to include with every request.
 # Supports environment variable interpolation using ${VAR_NAME} syntax.
 # Example:
-Authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYzE4MDk1Yy1iNzJjLTRlYTctOGQ5Ni02OWNiNTg0ZmE1ZDMiLCJyb2xlIjoiQURNSU4iLCJ0b2tlblR5cGUiOiJBVVRIIiwiaWF0IjoxNzc2MzIwOTY5LCJleHAiOjE3Nzg5MTI5Njl9.K4VPeF6soP2rqnhYOhkZSksj1_SxUdp7uxTLn6Q7UhM"
+Authorization = "Bearer ${JWT_TOKEN}"
 # X-API-Key = "static-value"
